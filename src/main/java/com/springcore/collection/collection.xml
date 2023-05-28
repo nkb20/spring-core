@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+<bean class="com.springcore.collection.Planet" id="earth" p:Name="Earth" >
+
+	<property name="Weather">
+		<list>
+			<value> Summer</value>
+			<value>Winter</value>
+			<value >Monsoon</value>
+		</list>
+	</property>
+	
+	<property name="Continent">
+		<set>
+			<value>Asia</value>
+			<value>Europe</value>
+			<value>Africa</value>
+		</set>
+	</property>
+	
+	
+	<property name="Population">
+		<map>
+			<entry key="India" value="14"/>
+			<entry key="China" value="139"/>
+			<entry key="America" value="120"/>
+
+		</map>
+	</property>
+	
+
+	
+<property name= "props">
+	
+	<props>
+		<prop key="Ab">12</prop>
+		<prop key="Yz">25</prop>
+		
+	</props>
+	
+</property>	
+	
+	
+	
+	</bean>
+
+</beans>
